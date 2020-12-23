@@ -5,38 +5,9 @@ any other value type you have already encountered (ints/floats/objects etc.).
 This means that we can pass functions as arguments to other functions, returning
 functions from functions, and even manipulating functions.
 
-# Koans
-
-Periodically we'll mention exercises from the Clojure Koans. These are a series of exercises
-designed to teach Clojure.
-
-Each one will be an assertion such as the following:
-
-```clojure
-(= true __)
-```
-
-The purpose of these exercises is to alter the `__` to make the assertion pass.
-
-```clojure
-(= true true)
-```
-
-The koans are done incrementally, as you complete each one it will then move on to the next koan.
-Feel free to go through these at your own pace.
-
-To get the koans all setup and running:
-
-	git clone git@github.com:clojurebridge-minneapolis/clojure-koans.git
-	cd clojure-koans
-	lein koan run
-
-It should give you a failed message, as you fix each broken assertion and save it should walk to
-the next problem.
-
 # Syntax
 
-Compared to other languages, Clojure does function calls slightly differently than the majority of common programming languages. To give a quick example:
+Compared to other languages, Clojure does function calls slightly differently than the majority of common programming languages. 
 
 ```java
 myFunction("hi", "bye")
@@ -57,8 +28,45 @@ Another thing is that we've placed the function inside the parenthesis. In Cloju
 call is always an open paren followed by the function we want to call, followed by any arguments
 we are passing to the function, followed by a closing paren.
 
-Lastly another thing is that we aren't separating the arguments with a comma anymore. In Clojure
+We also aren't separating the arguments with a comma anymore. In Clojure
 commas are simply treated as whitespace so we don't need them.
+
+Finally Clojure unlike a lot of other languages uses prefix notation for everything. 
+This means that operators, such as `+`, `-`, `*`, and `/` behave like function calls.
+
+To give a quick example:
+
+```java
+1 + 2
+```
+
+In clojure this would look like:
+
+```clojure
+(+ 1 2)
+```
+
+# Koans
+
+Periodically we'll mention exercises from the Clojure Koans. These are a series of exercises
+designed to teach Clojure.
+
+Each one will be an assertion such as the following:
+
+```clojure
+(= true __)
+```
+
+The purpose of these exercises is to alter the `__` to make the assertion pass.
+
+```clojure
+(= true true)
+```
+
+The koans are done incrementally, as you complete each one it will then move on to the next koan.
+Feel free to go through these at your own pace.
+
+To get the koans all setup and running visit the official koans page: http://clojurekoans.com/
 
 ## Common functions
 
